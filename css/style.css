@@ -1,0 +1,111 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff6d6;
+  color: #161616;
+}
+
+#flecheRetour {
+  opacity: 0;
+}
+
+#cv {
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  height: 0;
+}
+
+h1 {
+  border-bottom: black 1px solid;
+  margin-left: 5%;
+  font-size: 3.5em;
+}
+
+#menu {
+  list-style: none;
+  font-size: 2.75em;
+  margin: 0;
+}
+
+#menu span {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 160ms;
+  transition: -webkit-transform 160ms;
+  transition: transform 160ms;
+  transition: transform 160ms, -webkit-transform 160ms;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#menu li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 160ms;
+  transition: -webkit-transform 160ms;
+  transition: transform 160ms;
+  transition: transform 160ms, -webkit-transform 160ms;
+  color: #161616;
+}
+
+#menu li:active {
+  color: #3d3d3d;
+}
+
+#menu #titreCV:hover span {
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+}
+
+#menu #titreLdm:hover span {
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+}
+
+#flecheRetour {
+  width: 100px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#flecheRetour:active {
+  -webkit-filter: invert(30%);
+          filter: invert(30%);
+}
+
+#ldm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  text-align: justify;
+  margin: 20px auto;
+  position: absolute;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+#ldm span {
+  margin-left: auto;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: #161616 1px solid;
+  width: 60%;
+}
+/*# sourceMappingURL=style.css.map */
